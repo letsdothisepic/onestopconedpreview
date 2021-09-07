@@ -769,6 +769,7 @@ features
   transition: all 0.3s ease 0s;
   position: relative;
   margin-bottom: 30px;
+	height: 350px;
 }
 
 .features-small-item:hover .icon {
@@ -825,17 +826,13 @@ features
 
 .home-feature {
   padding-bottom: 0px;
-  padding-top: -150px;
-  margin-top: -400px;
+  padding-top: 0px;
+  margin-top: 0px;
   z-index: 9;
 }
 
 @media (max-width: 991px) {
-  .home-feature {
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-top: 0px;
-  }
+ 
 }
 
 /* 
@@ -1601,6 +1598,7 @@ Custom CSS
 .bottomLinkLi {
     display: inline;
     padding-right: 120px;
+	white-space: nowrap;
 }
 .bottomLink {
 	color: white;
