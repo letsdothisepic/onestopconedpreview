@@ -770,7 +770,7 @@ features
   transition: all 0.3s ease 0s;
   position: relative;
   margin-bottom: 30px;
-	height: 400px;
+	height: 430px;
 }
 
 .features-small-item:hover .icon {
@@ -1597,8 +1597,11 @@ preloader
 Custom CSS
 */
 .bottomLinkLi {
-    display: inline;
-    padding-right: 120px;
+	text-align: left;
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px;
+	margin-left: auto; 
 	white-space: nowrap;
 }
 .bottomLink {
@@ -1662,4 +1665,13 @@ Custom CSS
 
 #warningBottom {
 	color: crimson;
+}
+
+.leftAlign {
+	text-align: left;
+}
+
+.bottomLinksContainer {
+	margin: auto;
+	text-align: center;
 }
