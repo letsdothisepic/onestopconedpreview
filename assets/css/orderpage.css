@@ -1,0 +1,204 @@
+/* CSS Document */
+
+body {
+	background-color: #e8e8e8;
+}
+
+#topLogo {
+	height: 100px;
+	padding: 20px;
+	float: left;
+}
+
+#topHeading {
+	margin-top: 20px;
+	margin-left: 30px;
+	display: inline-block;
+}
+
+#box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	margin-top: 30px;
+	border-radius:20px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.courseInfo {
+	display: grid;
+	grid-template-columns: 120px auto;
+}
+
+.leftside{
+	padding-right: 30px;
+}
+
+.customerInfo {
+	padding-left: 30px;
+}
+
+.courseIcon {
+	grid-column: 1;
+	grid-row:1;
+	border-radius: 5px;
+}
+
+.courseTitleInfo{
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.courseTitleInfoText {
+	margin-top: 5px;
+	margin-bottom: 5px; 
+}
+
+.courseDescription {
+    grid-column: 1/3
+}
+
+.returnBox {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: 10px;
+    float:right;
+	width: 300px;
+	padding-left:15px;
+	padding-right:15px;
+	background-color: #a29bfe;
+	border-radius: 99px;
+	color: white;
+    -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.returnBox:hover{
+	background-color: #d63031;
+}
+.infoForm {
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	column-gap: 4px;
+	row-gap: 4px;
+}
+
+#name {
+	grid-row: 1;
+	grid-column: 1 / 5;
+}
+#email {
+	grid-row: 2;
+	grid-column: 1/5;
+}
+#tel {
+	grid-row: 3;
+	grid-column: 1/5;
+}
+#street-address {
+	grid-row: 4;
+	grid-column: 1/5;
+}
+#address-level2 {
+	grid-row: 5;
+	grid-column: 1/3;
+}
+#address-level1{
+	grid-row: 5;
+	grid-column: 3;
+}
+#postal-code {
+	grid-row: 5;
+	grid-column: 4;
+}
+
+a.main-button {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #0984E3;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+a.main-button:hover {
+  background-color: #0984E3;
+	color:#fff;
+}
+button.main-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #0984E3;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+button.main-button:hover {
+  background-color: #46a93f;
+	color:#fff;
+}
+
+.continuebutton {
+	grid-row: 7;
+	grid-column: 3/5;
+}
+
+.bottomText {
+	margin-top: 10px;
+	color: gray;
+}
+
+
+a#empty-cart {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #d63031;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+a#empty-cart:hover {
+  background-color: #d63031;
+	color:#fff;
+}
+button#empty-cart {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+    margin-top: 10px;
+  float:right;
+  background-color: #d63031;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+button#empty-cart:hover {
+  background-color: #46a93f;
+	color:#fff;
+}

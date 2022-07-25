@@ -1,0 +1,99 @@
+/* CSS Document */
+
+body {
+	background-color: #e8e8e8 !important;
+}
+
+#topLogo {
+	width: 20%;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box {
+	padding-top: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	margin-top: 10px;
+	border-radius:20px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.courseInfo {
+	display: grid;
+	grid-template-columns: 120px auto;
+}
+
+.leftside{
+	padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.customerInfo {
+	padding-left: 30px;
+}
+
+.courseIcon {
+	grid-column: 1;
+	grid-row:1;
+	border-radius: 5px;
+}
+
+.courseTitleInfo{
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.courseTitleInfoText {
+	margin-top: 5px;
+	margin-bottom: 5px; 
+}
+
+a.main-button {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #0984E3;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+a.main-button:hover {
+  background-color: #0984E3;
+	color:#fff;
+}
+button.main-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #0984E3;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+button.main-button:hover {
+  background-color: #46a93f;
+	color:#fff;
+}
+
+.continuebutton {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

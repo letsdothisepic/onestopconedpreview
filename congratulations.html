@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow" />
+<title>Congratulations!</title>
+<link href="assets/css/quiz.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body>
+	<img id="topLogo" alt="Company Logo" src="assets/images/logo.png">
+	<div id="box">
+	  <h1 align="center"><b>Congratulations!</b></h1>
+        <p>Congratulations! You've passed the quiz. An email will be sent to you with a certificate and information regarding your certification.</p>
+	</div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+        const jsConfetti = new JSConfetti();
+        window.onload = function(){
+            jsConfetti.addConfetti({
+                confettiColors: ['#0aff54', '#47ff7e', '#70ff96', '#85ffa1', '#b1fbbd', '#bef9c7'],
+                confettiRadius: 6,
+                confettiNumber: 1000
+            });
+        }
+    </script>
+</html>

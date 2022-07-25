@@ -1,0 +1,35 @@
+.question {
+    cursor: pointer;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.question p {
+    font-weight: 400;
+  font-size: 14px;
+  color: #777;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.prompt{
+    text-align: left;
+    display:block;
+}

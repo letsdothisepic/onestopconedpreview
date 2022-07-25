@@ -1,0 +1,244 @@
+/* CSS Document */
+
+/* 
+---------------------------------------------
+features
+--------------------------------------------- 
+*/
+.course {
+  cursor: pointer;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.courseIcon {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+button.remove-button-slider {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #FF5B5B;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.remove-button-slider:hover {
+  background-color: #0984e3;
+	color:#fff;
+}
+
+button.remove-button {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #0984e3;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.remove-button:hover {
+  background-color: #FF5B5B;
+	color:#fff;
+}
+/*
+#0984e3 blue
+#FF5B5B red
+*/
+button.remove-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #FF5B5B;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.main-button:hover {
+  background-color: #0984e3;
+	color:#fff;
+}
+
+#cartIcon {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 80px;
+    height: 80px;
+    background-color: #0984e3;
+    border-radius: 999px;
+    z-index: 999;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+#cartIcon:hover{
+    background-color: #46a93f;
+    width: 280px;
+}
+#cartIcon:hover .cartText {
+    max-width: 200px;
+}
+#cartIcon img {
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: 15px;
+    display: block;
+}
+#cartCountIcon {
+    pointer-events: none;
+    position: relative;
+    background-color: #FF5B5B;
+    width: 30px;
+    height: 30px;
+    border-radius: 99px;
+    bottom: 75px;
+    left: 55px;
+}
+#cartCountIcon span {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    color: white;
+    text-align: center;
+}
+#cartSubtotal {
+    pointer-events: none;
+    position: relative;
+    background-color: #FF5B5B;
+    height: 23px;
+    width: 80px;
+    border-radius: 99px;
+    bottom: 20px;
+    left: 0px;
+}
+#cartSubtotal span {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    color: white;
+    text-align: center;
+}
+
+.shake {
+    animation: shakeCart 0.4s ease-in-out forwards;
+}
+
+.cartText {
+    text-align: right;
+    position: relative;
+    max-width: 0;
+    float: right;
+    bottom: 50px;
+    right: 20px;
+    margin-left: auto;
+    -webkit-transition: max-width .3s;
+  transition: max-width .3s;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+    color: white;
+    font-size: 35px;
+}
+
+.cartText2 {
+    text-align: right;
+    position: relative;
+    max-width: 0;
+    float: center;
+    bottom: 50px;
+    right: 20px;
+    margin-left: auto;
+    -webkit-transition: max-width .3s;
+  transition: max-width .3s;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+    color: white;
+    font-size: 15px;
+}
+@keyframes shakeCart {
+  25% {
+    transform:translateX(6px)
+  }
+  50% {
+    transform:translateX(-4px);
+  }
+  75% {
+    transform:translateX(2px);
+  }
+  100% {
+    transform:translateX(0);
+  }
+}
+
+button.main-button-slider {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #fdcb6e;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.main-button-slider:hover {
+  background-color: #46a93f;
+	color:#fff;
+}
+
+button.main-button {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #46a93f;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.main-button:hover {
+  background-color: #fdcb6e;
+	color:#fff;
+}
