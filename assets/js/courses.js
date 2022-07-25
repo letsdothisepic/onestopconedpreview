@@ -1,19 +1,25 @@
 window.onload = function () {
+    console.log("top")
     if (window.sessionStorage.hasOwnProperty("cart")) {
         let currentCart = JSON.parse(window.sessionStorage.getItem("cart"))
         document.getElementById("cartcount").innerText = currentCart["items"].length
         document.getElementById("cartprice").innerText = "$" + (currentCart["total"] / 100.0)
         if (currentCart["items"].length === 0) {
+            console.log("no cart")
             document.getElementById("cartCountIcon").hidden = true
             document.getElementById("cartSubtotal").hidden = true
         }
+        else{
+            document.getElementById("cartCountIcon").hidden = false
+            document.getElementById("cartSubtotal").hidden = false
+        }
     } else {
+        console.log("no cart prop")
         sessionStorage.setItem("cart", '{"items":[], "total": 0}')
         document.getElementById("cartCountIcon").hidden = true
         document.getElementById("cartSubtotal").hidden = true
     }
     getCourses();
-
 };
 
 function getCourses() {
