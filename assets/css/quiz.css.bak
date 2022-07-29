@@ -101,6 +101,7 @@ button#empty-cart {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
+  background-color: #d63031;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -110,8 +111,6 @@ button#empty-cart {
   transition: all 0.3s ease 0s;
 }
 button#empty-cart:hover {
+  background-color: #6c5ce7;
 	color:#fff;
-}
-.align-left {
-    margin-left: 5px !important;
 }

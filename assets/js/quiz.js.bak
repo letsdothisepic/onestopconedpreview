@@ -2,7 +2,6 @@ let quizQuestions = JSON.parse('{"q1":{"A":"On demand","B":"At a definite time",
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString)
 let answers = [];
-let ableToLeave = false;
 window.onload = function () {
     window.scroll({top: 0});
     document.getElementById("form-submit").addEventListener("click", function (){
@@ -100,7 +99,6 @@ window.onload = function () {
                     current = current + "<button type=\"button\" id=\"try-again\" class=\"main-button continuebutton\"><b>Try Again</b></button>"
                     document.getElementById("box").innerHTML = current;
                     document.getElementById("try-again").addEventListener("click", function() {
-                        ableToLeave = true;
                         document.location.reload();
                     })
                     window.scroll({top: 0});
@@ -109,17 +107,16 @@ window.onload = function () {
         }
     )
 };
+
 window.onbeforeunload = function (e) {
-    if(!ableToLeave){
-        e = e || window.event;
+    e = e || window.event;
 
-        // For IE and Firefox prior to version 4
-        if (e) {
-            e.returnValue = 'Sure?';
-        }
-
-        // For Safari
-        return 'Sure?';
+    // For IE and Firefox prior to version 4
+    if (e) {
+        e.returnValue = 'Sure?';
     }
+
+    // For Safari
+    return 'Sure?';
 };
 

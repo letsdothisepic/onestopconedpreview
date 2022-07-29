@@ -39,11 +39,12 @@ co-owners?</p>
             <input type="checkbox" name="check" required=""><label for="check">Yes, I certify that the above requirements have been met.</label>
                 </div>
             <div class="question">
-            <input type="text" name="SSN" id="ssn"><label for="SSN">Last 4 digits of Social Security Number (required by LARA)</label>
-            </div>
-            <div class="question">
-            <input type="text" name="licnum" id="licnum"><label for="licnum">LARA License Number</label>
-            <p><em>If you don't know your LARA number, <a href="https://aca-prod.accela.com/MILARA/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y&amp;TabName=APO" target="_blank">click here</a> to look it up.</em></p>            </div><button type="button" id="form-submit" class="main-button continuebutton"><b>Submit Quiz</b></button></form>
+<input type="number" name="licnum" id="licnum"><label for="licnum">LARA License Number</label><p><em>If you don't know your LARA number, <a href="https://aca-prod.accela.com/MILARA/GeneralProperty/PropertyLookUp.aspx?isLicensee=Y&amp;TabName=APO" target="_blank">click here</a> to look it up.</em></p></div><div class="question">
+<input type="number" name="SSN" id="ssn"><label for="SSN">Last 4 digits of Social Security Number (required by LARA for course completion reporting validation)</label>
+</div>
+<div class="question">
+<input type="text" name="legalname" id="legalname"><label for="legalname">Your Name (as it appears on your license)</label>
+</div><button type="button" id="form-submit" class="main-button continuebutton"><b>Submit Quiz</b></button></form>
 </div>
 </body>
 </html>

@@ -17,14 +17,7 @@ function updateInformation() {
             document.getElementById("customerInfo").innerHTML = json.nameAndAddress;
             document.getElementById("purchaseDate").innerHTML = "<em>Purchased on " + timeConverter(json.timestamp) + "</em>";
             document.getElementById("courseName").innerHTML = "<b>" + json.courseName + "</b>";
-            let creditHoursText;
-            if(json["electiveHours"] === 0){
-                creditHoursText =  + (json["legalHours"]) + " credit-hours (" + json["legalHours"] + " Legal)";
-            }
-            else{
-                creditHoursText =  + (json["legalHours"] + json["electiveHours"]) + " credit-hours (" + json["legalHours"] + " Legal/" + json["electiveHours"] + " Elective)";
-            }
-            document.getElementById("creditHours").innerHTML = "<em>" + creditHoursText + "</em>";
+            document.getElementById("creditHours").innerHTML = "<em>" + json.creditHours + " credit-hours</em>";
             document.getElementById("downloadlink").setAttribute("href", "C:\\Users\\letsd\\Documents\\OneStopConed\\onestopconedbackend\\src\\main\\resources\\coursePDFs\\" + json.id + ".pdf")
             document.getElementById("downloadlink").setAttribute("download", json.courseName + " - 1StopConEd.pdf")
         }
