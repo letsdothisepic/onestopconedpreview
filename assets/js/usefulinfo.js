@@ -25,7 +25,7 @@ window.onload = function() {
             document.getElementById("posts").innerHTML = "<h1>Something went wrong</h1><h3>Something went wrong when attempting to load the blog.</h3>";
         }
         }
-        xhttp.open("GET", "http://localhost:7000/get-blog-posts")
+        xhttp.open("GET", "http://159.65.237.77:7000/get-blog-posts")
         xhttp.send()
 }
 

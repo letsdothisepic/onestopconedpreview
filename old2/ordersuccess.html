@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow" />
+<title>Thank you!</title>
+<link href="assets/css/quiz.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body>
+	<img id="topLogo" alt="Company Logo" src="assets/images/logo.png">
+	<div id="box">
+	  <h1 align="center"><b>Order Complete!</b></h1>
+      <p>Thanks for your purchase! You will receive an automated email with complete instructions on how to download the course material, take the quiz, and get your certificate of completion. If you do not see that email a few minutes after purchase, be sure to check your “Junk/Spam” folder in case it was delivered there instead of your Inbox!Check your email, you should have a message for each course you purchased, letting you know that your course is ready. This email will have more information about accessing the course, taking the quiz, and getting certified.</p>
+        <h3 align="center">Having problems?</h3>
+        <p>If you're still not seeing the email, you can visit our recovery page to request a re-send.</p>
+        <button type="button" id="form-submit" class="main-button continuebutton"><b>Request a Re-send</b></button>
+    </div>
+    <p align="center" class="bottomText">Copyright &copy; 1 Stop ConEd LLC 2012-<script>document.write(new Date().getFullYear())</script>. All Rights Reserved.</p>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+        const jsConfetti = new JSConfetti();
+        window.onload = function(){
+            jsConfetti.addConfetti({
+                confettiColors: ['#0aff54', '#47ff7e', '#70ff96', '#85ffa1', '#b1fbbd', '#bef9c7'],
+                confettiRadius: 6,
+                confettiNumber: 1000
+            });
+        }
+    </script>
+</html>

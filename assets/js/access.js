@@ -63,7 +63,7 @@ function updateInformation() {
         }
     };
 
-    xhttp.open("GET", "http://localhost:7000/get-access-info?confNum=" + urlParams.get("confNum") + "&security=" + urlParams.get("security"), true);
+    xhttp.open("GET", "http://159.65.237.77:7000/get-access-info?confNum=" + urlParams.get("confNum") + "&security=" + urlParams.get("security"), true);
     xhttp.send();
 
     document.getElementById("viewOnline").addEventListener("click", function(){

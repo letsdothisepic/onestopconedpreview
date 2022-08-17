@@ -1,101 +1,90 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link href="assets/css/orderpage.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link href="assets/css/orderpage.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow" />
-<title>1StopConEd Checkout</title>
+<meta name="robots" content="noindex, nofollow" />
     <script src="https://kit.fontawesome.com/85f2e83b0d.js" crossorigin="anonymous"></script>
+<title>1StopConEd Checkout</title>
 </head>
 
 <body>
-	
-	<a href="courses.html">
-		<div class="returnBox">
-			<h3 align="center"><b>Return to Courses</b></h3>
-		</div>
-	</a>
-	<img id="topLogo" alt="Company Logo" src="assets/images/logo.png">
-	<h1 id="topHeading">Checkout Now</h1>
-	<div id="box">
-		<div class="container">
-			<div class="row">
-			  <div class="col-sm-6 leftside">
-                  <button type="button" id="empty-cart"><strong>Empty Cart</strong></button>
-                  <h1 id="cartText"><b>Cart</b> (4)</h1>
-                  <div id="coursesPanel">
-                  <div class="courseInfo">
-<img class="courseIcon" src="/assets/images/courselogos/loading.png" alt="course icon" width="100" height="100">
-<div class="courseTitleInfo">
-<p class="courseTitleInfoText"><b>Complete 18-Hour Course</b></p>
-<p class="courseTitleInfoText"><em>18 credit-hours (10 Legal/8 Elective)</em></p>
-<p class="courseTitleInfoText"><b>$129.99</b></p></div>
-            <div data-id="106406" data-pricecents="12999" class="deleteButton">
+<a href="courses.html">
+<button type="button" id="returnCourses" class="main-button returnBox"><b>Return to Our Courses</b></button>
+</a> <img id="topLogo" alt="Company Logo" src="assets/images/logo.png">
+<h1 id="topHeading">Checkout Now</h1>
+<div id="box">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 leftside">
+        <button type="button" id="empty-cart"><strong>Empty Cart</strong></button>
+        <h1 id="cartText"><b>Cart</b> (loading)</h1>
+        <div id="coursesPanel">
+          <div class="courseInfo"> <img class="courseIcon" src="/assets/images/courselogos/loading.png" alt="course icon" width="100" height="100">
+            <div class="courseTitleInfo">
+              <p class="courseTitleInfoText"><b>Complete 18-Hour Course</b></p>
+              <p class="courseTitleInfoText"><em>18 credit-hours (10 Legal/8 Elective)</em></p>
+              <p class="courseTitleInfoText"><b>$129.99</b></p>
+            </div>
+            <div class="deleteButton">
               <i class="fa-solid fa-trash-can trashIcon fa-xl"></i>
-            </div></div>
-<div class="courseInfo">
-<img class="courseIcon" src="/assets/images/courselogos/loading.png" alt="course icon" width="100" height="100">
-<div class="courseTitleInfo">
-<p class="courseTitleInfoText"><b>Renewable Energy in Real Estate</b></p>
-<p class="courseTitleInfoText"><em>6 credit-hours (2 Legal/4 Elective)</em></p>
-<p class="courseTitleInfoText"><b>$49.99</b></p></div>
-            <div data-id="106543" data-pricecents="4999" class="deleteButton">
-              <i class="fa-solid fa-trash-can trashIcon fa-xl"></i>
-            </div></div>
-<div class="courseInfo">
-<img class="courseIcon" src="/assets/images/courselogos/loading.png" alt="course icon" width="100" height="100">
-<div class="courseTitleInfo">
-<p class="courseTitleInfoText"><b>What to Know about Septic Systems and Wells</b></p>
-<p class="courseTitleInfoText"><em>6 credit-hours (2 Legal/4 Elective)</em></p>
-<p class="courseTitleInfoText"><b>$49.99</b></p></div>
-            <div data-id="106545" data-pricecents="4999" class="deleteButton">
-              <i class="fa-solid fa-trash-can trashIcon fa-xl"></i>
-            </div></div>
-<div class="courseInfo">
-<img class="courseIcon" src="/assets/images/courselogos/loading.png" alt="course icon" width="100" height="100">
-<div class="courseTitleInfo">
-<p class="courseTitleInfoText"><b>Property Ownership and Landlord/Tenant Overview</b></p>
-<p class="courseTitleInfoText"><em>6 credit-hours (6 Legal)</em></p>
-<p class="courseTitleInfoText"><b>$49.99</b></p></div>
-            <div data-id="106547" data-pricecents="4999" class="deleteButton">
-              <i class="fa-solid fa-trash-can trashIcon fa-xl"></i>
-            </div></div>
-<div class="courseInfo">
-<img class="courseIcon" src="/assets/images/courselogos/radon_basics.png" alt="course icon" width="100" height="100">
-<div class="courseTitleInfo">
-<p class="courseTitleInfoText"><b>Radon Basics</b></p>
-<p class="courseTitleInfoText"><em>6 credit-hours (2 Legal/4 Elective)</em></p>
-<p class="courseTitleInfoText"><b>$49.99</b></p></div>
-            <div data-id="106548" data-pricecents="4999" class="deleteButton">
-              <i class="fa-solid fa-trash-can trashIcon fa-xl"></i>
-            </div></div></div>
-                  <p id="fees" style="float: right">$5.00</p>
-                  <p><strong>Mandatory Course Completion Reporting Fee</strong></p>
-                  <p style="margin-top: -20px;"><em>$1.00/course</em></p>
-                  <h3 id="subtotal" align="right">Subtotal: <b>$279.96</b></h3>
-                  <br>
-			  </div>
-				<div class="col-sm-6 customerInfo">
-					<h1><b>Your Information</b></h1>
-					<p><em>In order to be properly certified, you must fill out the information below.</em></p>
-					<form class="infoForm" autocomplete="on">
-						<input autocomplete="name" name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="true">
-						<input autocomplete="email" name="email" type="email" id="email" class="form-control" placeholder="Email Address" required="true">
-						<input autocomplete="tel" name="tel" type="tel" class="form-control" id="tel" placeholder="Phone Number" required="true">
-						<input autocomplete="street-address" name="street-address" type="text" class="form-control" id="street-address" placeholder="Street Address" required="true">
-						<input autocomplete="address-level2" name="address-level2" type="text" class="form-control" id="address-level2" placeholder="City/Town" required="true">
-						<input autocomplete="address-level1" name="address-level1" type="text" class="form-control" id="address-level1" placeholder="State" required="true" maxlength="2">
-						<input autocomplete="postal-code" name="postal-code" type="number" class="form-control" id="postal-code" placeholder="ZIP Code" required="true" max="99999">
-						<button type="button" id="form-submit" class="main-button continuebutton"><b>Continue to Payment</b></button>
-					</form>
-                    <br>
-					<p><em>Once your purchase has been completed, you will receive an email with instructions for accessing courses, taking quizzes, and being certified.</em></p>
-				  <p>By purchasing the course(s), you agree to the <a href="terms.html">Terms and Conditions</a>, and certify that all information entered during the checkout process is correct.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<p class="bottomText" align="center">Copyright 2022 1StopConEd LLC.</p>
+            </div>
+          </div>
+          <div class="courseInfo"> <img class="courseIcon" src="/assets/images/courselogos/loading.png" alt="course icon" width="100" height="100">
+            <div class="courseTitleInfo">
+              <p class="courseTitleInfoText"><b>Renewable Energy in Real Estate</b></p>
+              <p class="courseTitleInfoText"><em>6 credit-hours (2 Legal/4 Elective)</em></p>
+              <p class="courseTitleInfoText"><b>$49.99</b></p>
+            </div>
+          </div>
+          <div class="courseInfo"> <img class="courseIcon" src="/assets/images/courselogos/loading.png" alt="course icon" width="100" height="100">
+            <div class="courseTitleInfo">
+              <p class="courseTitleInfoText"><b>What to Know about Septic Systems and Wells</b></p>
+              <p class="courseTitleInfoText"><em>6 credit-hours (2 Legal/4 Elective)</em></p>
+              <p class="courseTitleInfoText"><b>$49.99</b></p>
+            </div>
+          </div>
+          <div class="courseInfo"> <img class="courseIcon" src="/assets/images/courselogos/loading.png" alt="course icon" width="100" height="100">
+            <div class="courseTitleInfo">
+              <p class="courseTitleInfoText"><b>Ultimate 2022 6-Hour Legal</b></p>
+              <p class="courseTitleInfoText"><em>6 credit-hours (6 Legal)</em></p>
+              <p class="courseTitleInfoText"><b>$49.99</b></p>
+            </div>
+          </div>
+        </div>
+          <div id="feesSection">
+          <br>
+          <p id="fees" style="float: right">$1.00</p>
+          <p><strong>Mandatory Course Completion Reporting Fee</strong></p>
+          <p style="margin-top: -20px;"><em>$1.00/course</em></p>
+          </div>
+        <h3 align="right" id="subtotal">Subtotal: <b>$loading</b></h3>
+        <br>
+      </div>
+      <div class="col-sm-6 customerInfo">
+        <h1><b>Your Information</b></h1>
+        <p><em>In order to be properly certified, you must fill out the information below.</em></p>
+          <p id="warning" style="color: red;" hidden>The <b id="wentWrong">Email Address</b> field was not entered correctly. Please try again.</p>
+          <p id="cartEmptyWarning" style="color: red;" hidden><b>Your cart is empty</b>. You must add items to your cart to make a purchase.</p>
+        <form class="infoForm" autocomplete="on">
+          <input autocomplete="name" name="name" type="name" class="form-control" id="name" placeholder="Full Name" required>
+          <input autocomplete="email" name="email" type="email" id="email" class="form-control" placeholder="Email Address" required>
+          <input autocomplete="tel" name="tel" type="number" class="form-control" id="tel" placeholder="Phone Number" required>
+          <input autocomplete="street-address" name="street-address" type="text" class="form-control" id="street-address" placeholder="Street Address" required>
+          <input autocomplete="address-level2" name="address-level2" type="text" class="form-control" id="address-level2" placeholder="City/Town" required>
+          <input autocomplete="address-level1" name="address-level1" type="text" class="form-control" id="address-level1" placeholder="State" required maxlength="2">
+          <input autocomplete="postal-code" name="postal-code" type="number" class="form-control" id="postal-code" placeholder="ZIP Code" required max="99999">
+          <button type="button" id="form-submit" class="main-button continuebutton"><b>Continue to Payment</b></button>
+        </form>
+        <br>
+        <p><em>Once your purchase is complete, you will receive an email with complete instructions, including how to access your course(s), take the quiz(es), and receive your certificate(s) of completion.</em></p>
+        <p>By purchasing the course(s), you agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>, and certify that all information entered during the checkout process is correct.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<p align="center" class="bottomText">Copyright &copy; 1 Stop ConEd LLC 2012-<script>document.write(new Date().getFullYear())</script>. All Rights Reserved.</p>
+<script src="assets/js/checkout.js"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@ window.onload = function() {
                     "        <p class=\"error\">An internal server error occured when attempting to load your information. Please try again later, or contact 1StopConEd.</p>"
             }
         }
-        xhttp.open("POST", "http://localhost:7000/resend-email", true);
+        xhttp.open("POST", "http://159.65.237.77:7000/resend-email", true);
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhttp.send(JSON.stringify(body));
     })

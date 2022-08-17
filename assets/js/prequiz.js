@@ -16,7 +16,14 @@ function updateInformation() {
             document.getElementById("courseIcon").setAttribute("src", "/assets/images/courselogos/" + json.courseLogo);
             document.getElementById("customerInfo").innerHTML = json.nameAndAddress;
             document.getElementById("courseName").innerHTML = "<b>" + json.courseName + "</b>";
-            document.getElementById("creditHours").innerHTML = "<em>" + json.creditHours + " credit-hours</em>";
+            let creditHoursText;
+            if(json["electiveHours"] === 0){
+                creditHoursText =  + (json["legalHours"]) + " credit-hours (" + json["legalHours"] + " Legal)";
+            }
+            else{
+                creditHoursText =  + (json["legalHours"] + json["electiveHours"]) + " credit-hours (" + json["legalHours"] + " Legal/" + json["electiveHours"] + " Elective)";
+            }
+            document.getElementById("creditHours").innerHTML = "<em>" + creditHoursText + " credit-hours</em>";
         }
         else if (this.readyState == 4 && this.status == 500){
             document.getElementById("container").innerHTML = "<div>\n" +
@@ -59,7 +66,7 @@ function updateInformation() {
         }
     };
 
-    xhttp.open("GET", "http://localhost:7000/get-purchase-info?confNum=" + urlParams.get("confNum") + "&security=" + urlParams.get("security"), true);
+    xhttp.open("GET", "http://159.65.237.77:7000/get-purchase-info?confNum=" + urlParams.get("confNum") + "&security=" + urlParams.get("security"), true);
     xhttp.send();
 
     document.getElementById("form-submit").addEventListener("click", function() {
